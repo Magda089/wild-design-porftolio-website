@@ -129,6 +129,7 @@ section {
 
 
 .hero-body {
+  background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,0.9) 100%);
   background-image: url(./src/magdalena-portrait.png);
   background-repeat: no-repeat;
   background-position: center;
