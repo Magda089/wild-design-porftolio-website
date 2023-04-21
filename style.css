@@ -129,7 +129,7 @@ section {
 
 
 .hero-body {
-  background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,0.9) 100%);
+  /* background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,0.9) 100%); */
   background-image: url(./src/magdalena-portrait.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -195,4 +195,25 @@ section {
 .btn:hover {
 color: orange;
 background: transparent;
+}
+
+/* about me section */
+.column-2 {
+  float: left;
+  width: 45%;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 475px;
+  margin:30px;
+  margin-right:30px;
+  margin-bottom: 70px;
+  background-color: orange;
+  line-height:2;
+}
+/* Large profile image */
+.large-profile {
+  background: url('./src/magdalena-portrait.png');
+  background-size: cover;
+  background-position: center;
 }
