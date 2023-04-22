@@ -52,7 +52,7 @@ nav ul li a {
 a.active,
 nav a:hover {
   background: white;
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid #f46c54;
   border-radius: 10px;
   transition: .5s;
 }
@@ -130,7 +130,7 @@ section {
 
 .hero-body {
   /* background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,0.9) 100%); */
-  background-image: url(./src/hot-air-balloons-g0a8382b06_1920.jpg);
+  background-image: url(./src/background-g51ddd6e57_1280.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -143,7 +143,7 @@ section {
 
   /* Text styles */
   text-align: center;
-  color: orange;
+  color: #f46c54;
 }
 
 .content {
@@ -157,7 +157,7 @@ section {
 }
 
 .hero-body h1 {
-  color: orange;
+  color: #f46c54;
   margin: 0;
   font-size: 5em;
   margin-top: 0;
@@ -165,7 +165,8 @@ section {
 }
 
 .hero-body p {
-  color: whitesmoke;
+  color: #f47c61
+  ;
   font-size: 30px;
 
 }
@@ -183,17 +184,18 @@ section {
   margin-right: auto;
   
   /* Text styles */
-  color: #f0f0f0;
+  color: #f47c61
+  ;
   text-decoration: none;
   font-size: 20px;
   
   /* Border styles */
-  border: 3px solid white; 
+  border: 3px solid #ef7661; 
   border-radius: 20px;
 }
 
 .btn:hover {
-color: orange;
+color: #eb4722;
 background: transparent;
 }
 
@@ -204,7 +206,7 @@ background: transparent;
   height: 100vh;
 }
 .about-left{
-  background: orangered;
+  background: #f47c61;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,7 +214,7 @@ background: transparent;
   height: 100vh;
 }
 .about-left-content > div{
-  background: orange;
+  background: #f3947e  ;
   padding: 4rem 4rem 2.5rem 5rem;
   text-align: center;
 }
@@ -283,7 +285,7 @@ background: transparent;
 }
 .icons li{
   list-style-type: none;
-  background: orange;
+  background: #f47c61;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -297,7 +299,7 @@ background: transparent;
   transition: all 0.5s ease-in-out;
 }
 .icons li:hover{
-  background: orangered;
+  background:#f47c61;
   color: white;
 }
 .about-right{
@@ -315,7 +317,7 @@ background: transparent;
   text-transform: uppercase;
 }
 .about-right h1 span{
-  color: orange;
+  color: #f0512d;
 }
 .about-right h2{
   font-weight: 600;
@@ -338,9 +340,9 @@ background: transparent;
   cursor: pointer;
 }
 .btns.btn-oranged{
-  background: orangered;
+  background: #f47c61;
   color: #fff;
-  border-color: orangered;
+  border-color: #f47c61;
   transition: all 0.5s ease-in-out;
 }
 .btns.btn-oranged:hover{
@@ -352,7 +354,7 @@ background: transparent;
   transition: all 0.5s ease-in-out;
 }
 .btns.btn-white:hover{
-  background: orangered;
+  background: #f47c61;
   border-color: oranged;
   color: #fff;
 }
@@ -375,3 +377,5 @@ background: transparent;
       right: -50px;
   }
 }
+
+/* portfolio */
