@@ -299,7 +299,7 @@ background: transparent;
   transition: all 0.5s ease-in-out;
 }
 .icons li:hover{
-  background:#f47c61;
+  background:#ef441d;
   color: white;
 }
 .about-right{
@@ -340,22 +340,23 @@ background: transparent;
   cursor: pointer;
 }
 .btns.btn-oranged{
-  background: #f47c61;
-  color: #fff;
-  border-color: #f47c61;
+  background: transparent;
+  color: #f15c3a;
   transition: all 0.5s ease-in-out;
+  border-color:  #f15c3a;
 }
 .btns.btn-oranged:hover{
-  background: transparent;
-  border-color: oranged;
-  color: #000;
+  background: #f47c61;
+  border-color: #f47c61;
+  color: white;
+
 }
 .btns.btn-white{
   transition: all 0.5s ease-in-out;
 }
 .btns.btn-white:hover{
   background: #f47c61;
-  border-color: oranged;
+  border-color: #f47c61;
   color: #fff;
 }
 .about-para p{
@@ -369,7 +370,7 @@ background: transparent;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
   }
-  .about-left{
+  .about-left {
       position: relative;
   }
   .about-left-content{
@@ -377,5 +378,67 @@ background: transparent;
       right: -50px;
   }
 }
-
+@media screen and (min-width: 460px){
+  .about-wrapper{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .about-left  {
+      position: relative;
+  }
+  .about-left-content .about-right-content{
+      position: absolute;
+      right: -50px;
+  }
+}
 /* portfolio */
+
+.header {
+  text-align: center;
+  padding: 32px;
+  color: #f47c61 ;
+}
+.header p {
+  color: black;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
