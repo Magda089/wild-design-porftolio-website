@@ -242,7 +242,7 @@ nav li a:hover {
 
 .social-icon:hover {
 	background-color: #777;
-	color #404c3c;
+	color: #404c3c;
 }
 
 .about-image {
@@ -307,114 +307,71 @@ nav li a:hover {
 	}
 }
 
-/* portfolio gallery*/
-.header {
-  text-align: center;
-  padding: 32px;
-  color: #f47c61;
-}
-.header p {
-  color: black;
-}
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-  align-items: center;
-  justify-content: center;
-}
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+
+/* Gallery version 2 */
+.gallery {
+  padding: 50px 0;
+  background-color: #f5f5f5;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-.header h2 {
-	font-size: 2.5rem;
-	color: #ef7661;
-	margin-bottom: 30px;
-}
-
-.header p {
-	font-size: 1.2rem;
-	color: #777;
-	margin-bottom: 20px;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-/* services section */
-.services {
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
- 
 }
 
-.service-item {
-  width: calc(33.33% - 20px);
-  margin-bottom: 40px;
-  text-align:center;
-  justify-content: center;
+.gallery h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
-.service-item img {
-  max-width: 100%;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
-.service-item h3 {
-  font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #ef7661;
+.gallery-grid a {
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
-.service-item p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 0;
-  color: #777 ;
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
 }
-.services h2 {
-  color: #404c3c;
+
+.gallery-grid .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(47, 79, 79, 0.8);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
 }
-@media only screen and (max-width: 768px) {
-  .service-item {
-    width: calc(50% - 20px);
-  }
+
+.gallery-grid h3 {
+  font-size: 1.2rem;
+  margin: 0;
 }
-@media only screen and (max-width: 480px) {
-  .service-item {
-    width: 100%;
-  }
+
+.gallery-grid a:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
- 
+
+.gallery-grid a:hover .overlay {
+  transform: translateY(0%);
+}
+
+
 /* services version 2 */
 #services {
   background-color: #f7f7f7;
@@ -587,4 +544,9 @@ a[href^="mailto:"] i {
 
 a[href^="mailto:"]:hover {
   color: #ef7661;
+}
+@media screen and (max-width: 767px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
