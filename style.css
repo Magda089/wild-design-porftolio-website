@@ -531,24 +531,18 @@ footer {
 
 
 /* mailto section  */
-a[href^="mailto:"] {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #5b6a56;
-}
-
-a[href^="mailto:"] i {
-  font-size: 1.2rem;
-  margin-right: 0.5rem;
-  color: #5b6a56;
-}
-
-a[href^="mailto:"]:hover {
+.contact-link {
+  display: inline-block;
+  padding: 10px;
   color: #ef7661;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
-@media screen and (max-width: 767px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+@media (max-width: 480px) {
+  .contact-link {
+    display: block;
+    margin-bottom: 10px;
   }
 }
