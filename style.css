@@ -210,10 +210,13 @@ nav li a:hover {
 	margin-right: 50px;
 }
 
-.about-text h2 {
+.about-text h2 a {
 	font-size: 2.5rem;
 	color: #ef7661;
 	margin-bottom: 30px;
+}
+.about-text:hover {
+	
 }
 
 .about-text p {
