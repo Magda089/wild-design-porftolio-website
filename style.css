@@ -47,8 +47,8 @@ nav ul li a {
 }
 
 nav li a:hover {
-  color: #ef7661;
-  border-bottom: 3px solid #f46c54;
+  color: #57745a;
+  border-bottom: 3px solid #57745a
 
 }
 
@@ -116,7 +116,7 @@ nav li a:hover {
 
 /* hero */
 .hero-section {
-  background-image: url('./src/background-g51ddd6e57_1280.png');
+  background-image: url('./src/banner_floral_natural.jpeg');
   background-size: cover;
   background-position: center;
   height: 700px;
@@ -135,7 +135,7 @@ nav li a:hover {
 .hero-section h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #ef7661;
+  color: #57745a;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -161,7 +161,7 @@ nav li a:hover {
 }
 
 .cta-btn:hover {
-  background-color: #ef7661;
+  background-color: #57745a;
   color: #fff;
 }
 
@@ -214,7 +214,7 @@ nav li a:hover {
 
 .about-text h2 a {
   font-size: 2.5rem;
-  color: #ef7661;
+  color: #57745a;
   margin-bottom: 30px;
 }
 
@@ -235,7 +235,7 @@ nav li a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #f47c61;
+  background-color: #57745a;
   color: #fff;
   width: 50px;
   height: 50px;
@@ -283,7 +283,7 @@ nav li a:hover {
 }
 
 .portfolio-btn:hover {
-  background-color: #f46c54;
+  background-color: #57745a;
   color: #333;
 }
 
@@ -331,7 +331,7 @@ nav li a:hover {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #ef7661;
+  color: #57745a;
 }
 
 .gallery-grid {
@@ -392,7 +392,7 @@ nav li a:hover {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #ef7661;
+  color: #57745a;
 }
 
 .service-box {
@@ -418,7 +418,7 @@ nav li a:hover {
 .service-icon i {
   padding: 15px;
   border-radius: 50%;
-  background-color: #ef7661;
+  background-color: #57745a;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
@@ -485,7 +485,7 @@ footer {
 }
 
 .footer-column h3 {
-  color: #ef7661;
+  color: #8a9e8c;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -599,7 +599,7 @@ a[href^="mailto:"] {
 }
 
 a[href^="mailto:"]:hover {
-  background-color: #ef7661;
+  background-color: #57745a;
 }
 
 /* media query for smaller screens */
