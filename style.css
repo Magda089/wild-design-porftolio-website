@@ -181,7 +181,7 @@ h1 {
 
 /* Clients section */
 #clients {
-  padding: 10px 0;
+  padding: 50px 0;
 }
 
 
@@ -219,6 +219,8 @@ h1 {
 .client-text h3 {
   font-size: 2rem; /* Increased font size for heading */
   margin-bottom: 20px;
+  color: #444;
+  margin-top: 20px;
 }
 
 .client-text p {
@@ -274,7 +276,7 @@ h1 {
 
 /* About Section Styles */
 .about-section {
-  padding: 80px 0;
+  padding: 20px 0;
   
 }
 
@@ -399,8 +401,9 @@ h1 {
 
 /* Gallery version 2 */
 .gallery {
-  padding: 50px 0;
+  padding: 10px 0;
   /* background-color: #f5f5f5; */
+
 }
 
 .container {
@@ -420,6 +423,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
+
 }
 
 .gallery-grid a {
@@ -603,7 +607,13 @@ footer {
 
 /* PROJECTS/AWARDS */
 .container {
+  padding: 60px 0;
   text-align: center;
+}
+.container p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
 }
 .project-section {
   display: flex;
@@ -644,6 +654,11 @@ footer {
   line-height: 1.4;
 }
 
+.about-text p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
+}
 /* divider */
 .divider {
   border: none;
