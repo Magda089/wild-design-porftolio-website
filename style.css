@@ -127,11 +127,12 @@ nav li a:hover {
   background-image: url('./src/Hero_Wild_Design_by_Magdalena_Coeur_d-Alene_2_small_size.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 400px; /* You may want to adjust the height as needed */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%; /* Add this line to make it take up the entire width */
 }
 
 .container {
