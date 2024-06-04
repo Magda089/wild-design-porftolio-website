@@ -116,10 +116,10 @@ nav li a:hover {
 
 /* hero */
 .hero-section {
-  background-image: url('./src/banner_floral_natural.jpeg');
+  background-image: url('./src/Hero_Wild_Design_by_Magdalena_Coeur_d-Alene.jpg');
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
