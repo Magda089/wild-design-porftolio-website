@@ -14,14 +14,15 @@ html {
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: white;
-  
+
 }
+
 h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  font-family: Jeanne-Moderno; 
-color: #446038;
+  font-family: Jeanne-Moderno;
+  color: #446038;
 }
 
 /* NAVIAGTION */
@@ -57,7 +58,6 @@ nav ul li a {
 nav li a:hover {
   color: #57745a;
   border-bottom: 3px solid #57745a
-
 }
 
 .checkbtn {
@@ -127,12 +127,14 @@ nav li a:hover {
   background-image: url('./src/Hero_Wild_Design_by_Magdalena_Coeur_d-Alene_2_small_size.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px; /* You may want to adjust the height as needed */
+  height: 400px;
+  /* You may want to adjust the height as needed */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100%; /* Add this line to make it take up the entire width */
+  width: 100%;
+  /* Add this line to make it take up the entire width */
 }
 
 .container {
@@ -149,8 +151,8 @@ nav li a:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-h1 { 
-  font-family: Jeanne-Moderno; 
+h1 {
+  font-family: Jeanne-Moderno;
 }
 
 .hero-section p {
@@ -182,69 +184,90 @@ h1 {
 
 /* Clients section */
 #clients {
-  padding: 50px 0;
+  padding: 40px 0;
+  background-color: #f9f9f9;
 }
 
+#clients h2 {
+  text-align: center;
+  color: #446038;
+  margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: 600;
+}
 
 .client {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .client-images {
-  width: 300px; /* Adjusted width for better image presentation */
-  height: auto;
-  margin-right: 40px;
-  flex-shrink: 0; /* Prevent images from shrinking */
-  border-radius: 10px; /* Rounded corners for images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex: 1;
+  min-width: 300px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.client-details {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .client-header-image,
 .client-description-image {
-  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 100%;
   height: auto;
-  display: block; /* Ensures images don't have any unwanted spacing */
-  border-radius: 10px; /* Rounded corners for images */
-}
-
-.client-details {
-  flex: 1; /* Let the content container take up remaining space */
 }
 
 .client-text {
-  padding: 0 20px; /* Added padding for better spacing */
-}
-
-.client-text h3 {
-  font-size: 2rem; /* Increased font size for heading */
-  margin-bottom: 20px;
-  color: #444;
   margin-top: 20px;
 }
 
+.client-text h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
 .client-text p {
- font-size: 1.2rem;
-  color: #363636;
-  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.6;
 }
 
 .client-text a {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #57745a;
-  color: #fff;
+  color: #446038;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 .client-text a:hover {
-  background-color: #446038;
+  text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .client {
+    flex-direction: column;
+  }
+
+  .client-images,
+  .client-details {
+    min-width: 100%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .hero-section {
@@ -278,7 +301,7 @@ h1 {
 /* About Section Styles */
 .about-section {
   padding: 20px 0;
-  
+
 }
 
 .about-content {
@@ -298,7 +321,7 @@ h1 {
   font-size: 2.5rem;
   color: #57745a;
   margin-bottom: 30px;
-  font-family: Jeanne-Moderno; 
+  font-family: Jeanne-Moderno;
 }
 
 
@@ -417,7 +440,7 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 50px;
   color: #57745a;
-  font-family: Jeanne-Moderno; 
+  font-family: Jeanne-Moderno;
 }
 
 .gallery-grid {
@@ -480,7 +503,7 @@ h1 {
   font-weight: 700;
   margin-bottom: 20px;
   color: #57745a;
-  font-family: Jeanne-Moderno; 
+  font-family: Jeanne-Moderno;
 }
 
 .service-box {
@@ -519,7 +542,7 @@ h1 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: Jeanne-Moderno; 
+  font-family: Jeanne-Moderno;
 }
 
 .service-box p {
@@ -611,11 +634,13 @@ footer {
   padding: 60px 0;
   text-align: center;
 }
+
 .container p {
   font-size: 1.2rem;
   color: #777;
   margin-bottom: 20px;
 }
+
 .project-section {
   display: flex;
   justify-content: space-between;
@@ -629,7 +654,8 @@ footer {
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  width: 45%; /* Adjust the width as needed */
+  width: 45%;
+  /* Adjust the width as needed */
 }
 
 .project-card:hover {
@@ -638,8 +664,10 @@ footer {
 
 .project-card img {
   max-width: 100%;
-  height: 300px; /* Set the height to the desired size */
-  object-fit: cover; /* Maintain aspect ratio and cover the whole area */
+  height: 300px;
+  /* Set the height to the desired size */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the whole area */
   border-radius: 5px;
 }
 
@@ -660,12 +688,16 @@ footer {
   color: #777;
   margin-bottom: 20px;
 }
+
 /* divider */
 .divider {
   border: none;
-  border-top: 2px solid #ccc; /* Adjust the color and thickness as desired */
-  margin: 20px auto; /* Adjust the margin to position the divider */
-  width: 80%; /* Adjust the width of the divider */
+  border-top: 2px solid #ccc;
+  /* Adjust the color and thickness as desired */
+  margin: 20px auto;
+  /* Adjust the margin to position the divider */
+  width: 80%;
+  /* Adjust the width of the divider */
 }
 
 /* Media Queries */
