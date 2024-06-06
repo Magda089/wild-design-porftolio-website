@@ -252,11 +252,18 @@ h1 {
   display: inline-block;
   margin-top: 10px;
   font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid #446038;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .client-text a:hover {
-  text-decoration: underline;
+  background-color: #446038;
+  color: #fff;
+  text-decoration: none;
 }
+
 
 @media (max-width: 768px) {
   .client {
