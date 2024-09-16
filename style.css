@@ -571,7 +571,19 @@ h1 {
     font-size: 14px;
   }
 }
+/* footer 2 */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
 
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /* footer */
 
